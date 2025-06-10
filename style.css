@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent  overflow */
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 100%; /* Use 100% instead of 100vw */
+    min-height: 100vh;
+    background-color: #FCF5EB;
+    padding: 0 20px;
+}
+
+.navbar {
+    width: 100%; /* Use 100% instead of 100vw */
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; /* Add padding to match the container */
+      backdrop-filter: blur(10px); /* main blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari support */
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    /* background-color: white; Optional: Add a background color for better visibility */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Optional: Add a shadow for better aesthetics */
+}
+
+.logo {
+    width: 120px;
+    height: 30px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.slide
+{
+    cursor:pointer;
+    position: relative;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.slide::after
+{
+    position:absolute;
+    content:"";
+    background-color: #25D366;
+    height:2px;
+    width:80px;
+    /* top:20px; */
+    bottom:0;
+    left:2%;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin: 0%;
+    /* left:0; */
+}
+.slide:hover::after
+{
+    transform: scaleX(1);
+   
+}
+.features-item
+{
+    display: flex;
+    gap:3px;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    position:relative;
+    height:26px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-right:30px;
+}
+.buttons-container > button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size:16px;
+    border:1px solid black;
+}
+.green-button
+{
+    background-color: #25D366;
+}
+.white-button
+{
+    background-color: white;
+}
