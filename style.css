@@ -186,56 +186,56 @@
     align-items: center;
     gap: 20px;
      */
-     position:relative;
+    position:relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .hero-images-container > img:nth-child(1) {
 
-    position:absolute;
+    /* position:absolute; */
     width: 450px;
-    animation: gm 0.8s ease-in-out;
+    animation: gm 0.5s ease-in-out;
     /* margin-bottom:30px; */
 }
 @keyframes gm {
     0% {
         transform: translateY(50px);
-        opacity: 0;
+        /* opacity: 0; */
     }
-    50% {
-        transform: translateY(0px);
+    /* 50% {
+        transform: translateY(50px);
         opacity: 0;
-    }
+    } */
     100% {
-        transform: translateY(0);
-        opacity: 1;
+        transform: translateY(0px);
+        /* opacity: 1; */
     }
 }
 .hero-images-container > img:nth-child(2) {
     position:absolute;
     top:20px;
     width: 400px;
-    animation: dil 1.5s ease-in-out;
+    animation: dil 1s ease-in-out;
 }
 @keyframes dil {
     0% {
-        transform: translateY(50px);
+        /* transform: translateY(50px); */
         opacity: 0;
     }
      60% {
-        transform: translateY(0px);
+        /* transform: translateY(50px); */
         opacity: 0;
     }
     100% {
-        transform: translateY(0);
+        /* transform: translateY(0); */
         opacity: 1;
     }
 }
 .hero-images-container > img:nth-child(3) {
     margin-top: 30px;
     width: 400px;
-    animation: coffee 2.2s ease-in-out;
+    animation: coffee 1.5s ease-in-out;
 }
 @keyframes coffee {
     0% {
@@ -253,7 +253,7 @@
 }
 .hero-images-container > img:nth-child(4) {
     width: 400px;
-    animation: voice 2.9s ease-in-out;
+    animation: voice 2s ease-in-out;
 }
 @keyframes voice {
     0% {
@@ -271,7 +271,7 @@
 }
 .hero-images-container > img:nth-child(5) {
     width: 500px;
-    animation: photo 3.6s ease-in-out;
+    animation: photo 2.5s ease-in-out;
 }
 @keyframes photo {
     0% {
@@ -292,7 +292,7 @@
        position:absolute;
        bottom:30px;
        left:2   px;
-    animation: cryingEmoji 4.3s ease-in-out;
+    animation: cryingEmoji 3s ease-in-out;
 }
 @keyframes cryingEmoji {
     0% {
@@ -310,7 +310,7 @@
 }
 .hero-images-container > img:nth-child(7) {
     width: 400px;
-    animation: trip 5s ease-in-out;
+    animation: trip 3.5s ease-in-out;
 }
 @keyframes trip {
     0% {
