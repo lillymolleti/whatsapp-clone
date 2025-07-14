@@ -575,6 +575,8 @@ select
 .social-icons
 {
     display:flex;
+    /* justify-self: center; */
+    /* gap:10px; */
     /* width:40%; */
 }
 
@@ -589,10 +591,11 @@ select
     margin: 0 10px;
     cursor: pointer;
 }
-.social-icons>i.fb-icon
+.social-icons > i.fb-icon
 {
-   border-radius: 120%;
-   font-size: 14px;
+   /* border-radius: 120%; */
+   width:48px;
+   font-size: 16px;
    text-align: center;
 }
 
