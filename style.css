@@ -571,6 +571,24 @@ select
     padding:15px 20px;
     overflow: hidden;
     border:1px solid white;
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+}
+.language-selector
+{
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    gap: 10px; */
+}
+.language-selector > i
+{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 12px;
+    pointer-events: none; /* Prevent the icon from blocking clicks on the select */
 }
 .social-icons
 {
@@ -583,7 +601,7 @@ select
 .social-icons > i
 {
     font-size: 17px;
-    background-color: #1C1E21;
+    background-color: #111B21;
     border:1px solid white;
     padding: 15px;
     border-radius:60%;
